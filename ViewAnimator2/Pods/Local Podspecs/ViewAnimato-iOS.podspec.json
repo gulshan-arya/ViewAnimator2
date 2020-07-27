@@ -1,0 +1,24 @@
+{
+  "name": "ViewAnimato-iOS",
+  "version": "0.0.1",
+  "summary": "ViewAnimator is a library for building complex iOS UIView animations in an easy way",
+  "description": "PhotoFeeds provides you with smooth loading of images from the server in a MVVM architecture. It uses a third party library to fetch images!",
+  "homepage": "https://github.com/gulshan-arya/ViewAnimator-iOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Gulshan Kumar": "singh.aryan7575@gmail.com"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source": {
+    "git": "https://github.com/gulshan-arya/ViewAnimator-iOS.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "ViewAnimator/ViewAnimator/*.{swift}",
+  "swift_versions": "4.0",
+  "swift_version": "4.0"
+}

@@ -1,0 +1,6 @@
+framework module ViewAnimato_iOS {
+  umbrella header "ViewAnimato-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

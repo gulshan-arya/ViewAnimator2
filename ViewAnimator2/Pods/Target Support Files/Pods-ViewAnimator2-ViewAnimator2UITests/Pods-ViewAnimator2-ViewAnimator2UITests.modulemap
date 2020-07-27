@@ -1,0 +1,6 @@
+framework module Pods_ViewAnimator2_ViewAnimator2UITests {
+  umbrella header "Pods-ViewAnimator2-ViewAnimator2UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

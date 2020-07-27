@@ -1,0 +1,16 @@
+PODS:
+  - ViewAnimato-iOS (0.0.1)
+
+DEPENDENCIES:
+  - ViewAnimato-iOS (from `/Users/gulshan/ViewAnimator-iOS/`)
+
+EXTERNAL SOURCES:
+  ViewAnimato-iOS:
+    :podspec: "/Users/gulshan/ViewAnimator-iOS/"
+
+SPEC CHECKSUMS:
+  ViewAnimato-iOS: dbf130ca269c36b1710d011fefbfbe53291e3637
+
+PODFILE CHECKSUM: ae15befeacf30c75dcc9eee3c273c87290e32d0d
+
+COCOAPODS: 1.8.3
