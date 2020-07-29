@@ -10,11 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    private let activityIndicator = UIActivityIndicatorView(style: .gray)
+    private let activityIndicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.medium)
+    
+    private lazy var settingsVC = SettingsViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
+            self.present(self.settingsVC, animated: true)
+        })
     }
     
     private func setupActivityIndicator() {
@@ -23,7 +32,6 @@ class ViewController: UIViewController {
         view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
     }
-    
 }
 
 

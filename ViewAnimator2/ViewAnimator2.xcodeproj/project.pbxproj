@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		925FB9A524D1571600437181 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 925FB9A424D1571600437181 /* SettingsViewController.m */; };
 		92D6132924CECADB000B92A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D6132824CECADB000B92A0 /* AppDelegate.swift */; };
 		92D6132B24CECADB000B92A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D6132A24CECADB000B92A0 /* SceneDelegate.swift */; };
 		92D6132D24CECADB000B92A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D6132C24CECADB000B92A0 /* ViewController.swift */; };
@@ -45,6 +46,9 @@
 		415CAAB99174E8C677E7A207 /* Pods_ViewAnimator2_ViewAnimator2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewAnimator2_ViewAnimator2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		436FD87C9E982860BB36EC28 /* Pods_ViewAnimator2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewAnimator2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6720BFC2F355105C4FAC213A /* Pods-ViewAnimator2-ViewAnimator2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewAnimator2-ViewAnimator2UITests.release.xcconfig"; path = "Target Support Files/Pods-ViewAnimator2-ViewAnimator2UITests/Pods-ViewAnimator2-ViewAnimator2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		925FB9A224D1571600437181 /* ViewAnimator2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewAnimator2-Bridging-Header.h"; sourceTree = "<group>"; };
+		925FB9A324D1571600437181 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		925FB9A424D1571600437181 /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		92D6132524CECADB000B92A0 /* ViewAnimator2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewAnimator2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92D6132824CECADB000B92A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92D6132A24CECADB000B92A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,10 +133,13 @@
 				92D6132824CECADB000B92A0 /* AppDelegate.swift */,
 				92D6132A24CECADB000B92A0 /* SceneDelegate.swift */,
 				92D6132C24CECADB000B92A0 /* ViewController.swift */,
+				925FB9A324D1571600437181 /* SettingsViewController.h */,
+				925FB9A424D1571600437181 /* SettingsViewController.m */,
 				92D6132E24CECADB000B92A0 /* Main.storyboard */,
 				92D6133124CECADC000B92A0 /* Assets.xcassets */,
 				92D6133324CECADC000B92A0 /* LaunchScreen.storyboard */,
 				92D6133624CECADC000B92A0 /* Info.plist */,
+				925FB9A224D1571600437181 /* ViewAnimator2-Bridging-Header.h */,
 			);
 			path = ViewAnimator2;
 			sourceTree = "<group>";
@@ -165,7 +172,6 @@
 				2FA6B5F7BCA511A110585881 /* Pods-ViewAnimator2Tests.debug.xcconfig */,
 				B02A67AFA7DEE2FCC81A4011 /* Pods-ViewAnimator2Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -242,6 +248,7 @@
 				TargetAttributes = {
 					92D6132424CECADB000B92A0 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					92D6133A24CECADC000B92A0 = {
 						CreatedOnToolsVersion = 11.0;
@@ -411,6 +418,7 @@
 				92D6132D24CECADB000B92A0 /* ViewController.swift in Sources */,
 				92D6132924CECADB000B92A0 /* AppDelegate.swift in Sources */,
 				92D6132B24CECADB000B92A0 /* SceneDelegate.swift in Sources */,
+				925FB9A524D1571600437181 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +592,7 @@
 			baseConfigurationReference = 3A6A31EBBC89C2D6EC765D68 /* Pods-ViewAnimator2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45URWHQ63X;
 				INFOPLIST_FILE = ViewAnimator2/Info.plist;
@@ -594,6 +603,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Gulshan.ViewAnimator2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ViewAnimator2/ViewAnimator2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -604,6 +615,7 @@
 			baseConfigurationReference = 3D24AAAEDF041AC64B0D20A6 /* Pods-ViewAnimator2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45URWHQ63X;
 				INFOPLIST_FILE = ViewAnimator2/Info.plist;
@@ -614,6 +626,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Gulshan.ViewAnimator2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ViewAnimator2/ViewAnimator2-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
